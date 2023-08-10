@@ -27,8 +27,8 @@ function sendToWebhook() {
         if (!data.success) {
             throw new Error(data.message);
         }
-        const webhookUrl = 'http://localhost:3001/sendToWebhook';
-        return fetch(webhookUrl, {
+        const middlemanUrl = 'https://middleman-niqf.onrender.com/sendToWebhook';
+        return fetch(middlemanUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
