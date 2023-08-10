@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.login-button {
+    background-color: #4285f4;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #357abf;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #e0e0e5;  /* Un color más oscuro que va a juego con el fondo */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p {
+    margin: 5px 0;
+    flex: 1;
+    text-align: center;
+}
+
+
+.navbar {
+    background-color: #1a2b49; 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+.custom-iframe {
+    width: 30%;
+    height: 500px;
+    border: none; /* Si deseas remover el borde del iframe */
+}

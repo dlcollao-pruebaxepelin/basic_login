@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Sheet View</title>
+    <script src="../client.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/">Xepelin</a>
+    </div>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMm239pJ7kJRvsMxpnWta-Z0mikUvUC-bbgzbUuf7c7A250HbXaGstdyi6XD215ZzUTwDvG30wQLN9/pubhtml?widget=true&amp;headers=false" class="custom-iframe"></iframe>
+    <form id="updateForm" onsubmit="event.preventDefault(); sendToWebhook();">
+        <label for="idOp">ID de Operación:</label>
+        <input type="text" id="idOp" name="idOp" required>
+    
+        <label for="tasa">Tasa:</label>
+        <input type="number" step="0.01" id="tasa" name="tasa" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <input type="submit" value="update">
+    </form>
+    <div id="message"></div>
+
+</body>
+</html>
