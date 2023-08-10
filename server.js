@@ -8,7 +8,7 @@ const PORT = 3000;
 
 const CLIENT_ID = '755315058303-g2tb0ln9plboq72pmcqtnko3qfvt4n7e.apps.googleusercontent.com';
 const CLIENT_SECRET = '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';
-const REDIRECT_URL = 'http://localhost:3000/oauth2callback';
+const REDIRECT_URL = 'https://basic-login-57gc.onrender.com/oauth2callback';
 const SCOPES = [
   'https://www.googleapis.com/auth/spreadsheets'
 ];
